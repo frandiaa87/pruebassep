@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funciones útiles para cadenas de texto</title>
+    <script type="text/javascript">
+//length, calcula la longitud de una cadena de texto (el número de caracteres que la forman)
+    var mensaje = "Hola Mundo";
+    var numeroLetras = mensaje.length; // numeroLetras = 10
+    document.write("La frase " )
+    document.write(mensaje)
+    document.write(" tiene ")
+    document.write(numeroLetras)
+    document.write(" caracteres")
+
+//v+, se emplea para concatenar varias cadenas de texto
+var mensaje1 = "Hola";
+var mensaje2 = " Mundo";
+var mensaje = mensaje1 + mensaje2; // mensaje = "Hola Mundo"
+    document.write("<br>")
+    document.write(mensaje);
+
+//Además del operador +, también se puede utilizar la función concat()
+var mensaje1 = "Mundo";
+var mensaje2 = mensaje1.concat(" Loco"); // mensaje2 = "Mundo loco"
+    document.write("<br>")
+    document.write(mensaje2);
+
+//Los espacios en blanco se pueden añadir al final o al principio de las
+ //cadenas y también se pueden indicar forma explícita:
+
+var mensaje1 = "Hola";
+var mensaje2 = "Mundo";
+var mensaje = " " + mensaje1 + " " + mensaje2; // mensaje = "Hola Mundo"
+    document.write(mensaje);
+
+//toUpperCase(), transforma todos los caracteres de la cadena a sus correspondientes caracteres en mayúsculas:
+
+var mensaje1 = "Hola";
+var mensaje2 = mensaje1.toUpperCase(); // mensaje2 = "HOLA"
+    document.write("<br>")
+    document.write(mensaje2);
+
+//toLowerCase(), transforma todos los caracteres de la cadena a sus correspondientes caracteres en minúsculas:
+
+var mensaje1 = "HolA";
+var mensaje2 = mensaje1.toLowerCase(); // mensaje2 = "hola"
+    document.write("<br>")
+    document.write(mensaje);
+
+//charAt(posicion), obtiene el carácter que se encuentra en la posición indicada:
+    
+var mensaje = "Hola";
+var letra = mensaje.charAt(0); // letra = H
+letra = mensaje.charAt(2);     // letra = l
+    document.write("<br>")
+    document.write(letra);
+
+//indexOf(caracter), calcula la posición en la que se encuentra el carácter indicado dentro de la cadena de texto. Si el carácter se incluye varias veces dentro de la cadena de texto, se devuelve su primera posición empezando a buscar desde la izquierda. Si la cadena no contiene el carácter, la función devuelve el valor -1:
+
+var mensaje = "Hola";
+var posicion = mensaje.indexOf('a'); // posicion = 3
+posicion = mensaje.indexOf('b');     // posicion = -1
+
+//Su función análoga es lastIndexOf():
+
+//lastIndexOf(caracter), calcula la última posición en la que se encuentra el carácter indicado dentro de la cadena de texto. Si la cadena no contiene el carácter, la función devuelve el valor -1:
+
+var mensaje = "Hola";
+var posicion = mensaje.lastIndexOf('a'); // posicion = 3
+
+posicion = mensaje.lastIndexOf('b');     // posicion = -1
+ 
+ 
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

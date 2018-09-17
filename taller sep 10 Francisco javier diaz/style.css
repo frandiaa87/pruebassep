@@ -1,0 +1,16 @@
+ @font-face {
+    font-family: "bubble";
+    src: url(fuentes/bubble.ttf) format("truetype");
+}
+* {
+    padding: 5px;
+    background: rgba(91, 140, 185, 0.25)
+  }
+  
+H1 {
+    font-family: "bubble"
+}
+h2 {
+    color: green;
+    background-color: white;
+    border: 2px solid black;
